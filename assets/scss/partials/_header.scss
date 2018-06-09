@@ -1,0 +1,27 @@
+/* --------------------------
+ *  Header
+ * -------------------------- */
+
+.global-header .content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.global-header .logo {
+  float: left;
+  margin-right: 1.6em;
+  flex-grow: 1;
+}
+
+.global-header .search {
+  float: left;
+  margin: 0 1.6em -1px 0;
+  flex: 1 0 auto;
+}
+
+.global-nav {
+  float: right;
+  padding: 0;
+}

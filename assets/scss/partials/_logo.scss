@@ -1,0 +1,29 @@
+/* ===================================
+ * LOGO
+ * ===================================*/
+
+.logo a {
+  text-decoration: none;
+}
+
+.logo span {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: $black;
+  white-space: nowrap;
+}
+
+.logo em {
+  font-style: normal;
+  color: $primary-color;
+}
+
+.global-footer .logo span {
+  font-size: 1.5em;
+  color: $white;
+}
+
+.banner .logo span,
+.banner {
+  color: $black;
+}

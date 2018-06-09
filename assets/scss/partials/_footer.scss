@@ -1,0 +1,20 @@
+/* --------------------------
+ *  Footer
+ * -------------------------- */
+.global-footer {
+  background-color: $black;
+  color: #gray-3;
+  flex: auto;
+  align-items: left;
+  flex-grow: 1;
+  padding: ($pulse * 3) 0 ($pulse * 3);
+}
+
+.global-footer a {
+  color: inherit;
+}
+
+.global-footer ul {
+  list-style-type: none;
+  font-size: 1.2em;
+}
