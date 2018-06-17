@@ -2,6 +2,10 @@
  * HELPERS
  * ===================================*/
 
+.content-wrapper ul {
+   list-style-type: none;
+}
+
 .content-wrapper {
   max-width: 96em;
   margin: 0 auto;
@@ -28,4 +32,27 @@
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+.wrapped-list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: 0;
+    max-width: 50rem;
+}
+
+.color__example {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 10.3125em;
+    height: 7.5em;
+    transition: transform 250ms;
+    margin-bottom: 1rem;
 }

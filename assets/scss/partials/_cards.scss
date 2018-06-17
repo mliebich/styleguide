@@ -5,11 +5,9 @@
   box-shadow: 0 0 20px rgba(0,0,0,0.14);
   margin: 0 $pulse $pulse 0;
   border-radius: 3px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   font-size: 1rem;
 }
 
@@ -39,7 +37,7 @@
 }
 
 .card__thumb img {
-  width : 100%;
+  width: 100%;
   display: block;
 }
 
@@ -48,16 +46,13 @@
   display: table;
   clear: both;
 }
-
 /* ===================================
  * Card footer w/ buttons
  * ===================================*/
-
 .card__footer {
   display: flex;
   border-top: 1px solid #bbc1c6;
 }
-
 
 .card__footer .btn {
   border: none;
@@ -69,16 +64,13 @@
   flex: 1 0 auto;
   text-align: left;
 }
-
 /* ===================================
  * Card RWD layout / grid
  * ===================================*/
-
 .cards {
   display: flex;
   flex-wrap: wrap;
 }
-
 /* Tablets */
 @include tablet {
   .cards {
@@ -90,7 +82,6 @@
     width: calc(50% - #{$pulse});
   }
 }
-
 /* Desktop */
 @include desktop {
   .cards .card {

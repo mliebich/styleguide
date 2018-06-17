@@ -3,8 +3,8 @@
  * ------------------------------ */
 .banner {
   color: $black;
-  padding: 0 0 ($pulse * 3) 0;
-  margin: 0 0 ($pulse * 3) 0;
+  padding: 0 0 ($pulse * 1) 0;
+  margin: 0 0 ($pulse * 1) 0;
 }
 
 .banner a {
@@ -26,13 +26,12 @@
 .masthead label {
   color: $black;
 }
-
 @media screen and (min-width: 480px) {
   .masthead h1 {
     text-align: left;
   }
 
-  .masthead__search{
+  .masthead__search {
     margin: 0 auto;
     width: 50%;
   }
