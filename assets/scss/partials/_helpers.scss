@@ -44,6 +44,12 @@
     max-width: 50rem;
 }
 
+
+.color {
+    margin-bottom: 3rem;
+    margin-left: 1.5rem;
+}
+
 .color__example {
     display: -ms-flexbox;
     display: flex;
@@ -52,7 +58,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     width: 10.3125em;
-    height: 7.5em;
+    height: 5.5em;
     transition: transform 250ms;
     margin-bottom: 1rem;
 }
