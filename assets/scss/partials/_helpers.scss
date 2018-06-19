@@ -41,16 +41,17 @@
     flex-wrap: wrap;
     list-style: none;
     margin-left: 0;
-    max-width: 50rem;
+    //max-width: 90rem;
+    border-bottom: 1px solid #afbac4;
 }
 
 
-.color {
+.box {
     margin-bottom: 3rem;
     margin-left: 1.5rem;
 }
 
-.color__example {
+.box__example {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
