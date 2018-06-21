@@ -1,9 +1,8 @@
 /* ===================================
  * HELPERS
  * ===================================*/
-
 .content-wrapper ul {
-   list-style-type: none;
+  list-style-type: none;
 }
 
 .content-wrapper {
@@ -35,31 +34,30 @@
 }
 
 .wrapped-list {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    list-style: none;
-    margin-left: 0;
-    //max-width: 90rem;
-    border-bottom: 1px solid #afbac4;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 0;
+  //max-width: 90rem;
+  border-bottom: 3px solid #2c9cf2;
 }
 
-
 .box {
-    margin-bottom: 3rem;
-    margin-left: 1.5rem;
+  margin-bottom: 3rem;
+  margin-left: 1.5rem;
 }
 
 .box__example {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 10.3125em;
-    height: 5.5em;
-    transition: transform 250ms;
-    margin-bottom: 1rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10.3125em;
+  height: 5.5em;
+  transition: transform 250ms;
+  margin-bottom: 1rem;
 }

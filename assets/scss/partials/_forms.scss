@@ -22,7 +22,17 @@
   &:focus {
     border-color: #72787e;
   }
+  box-shadow: 0 0 20px rgba(0,0,0,0.14);
 }
+
+.input__textarea{
+  resize: both;
+}
+
+.input__requirement{
+  color: $secondary-color
+}
+
 
 .input__row {
   display: flex;
