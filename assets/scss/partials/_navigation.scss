@@ -13,6 +13,37 @@
 }
 
 /* --------------------------
+*  Tabs
+* -------------------------- */
+
+.tabs {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 3.2rem;
+  border-bottom: 1px solid #e3e5e9;
+}
+
+.tabs li {
+  display: inline-block;
+}
+
+.tabs a {
+  display: inline-block;
+  padding: 1.6rem 0.8rem;
+  border-bottom: 2px solid #fff;
+  color: #2c9cf2;
+  text-decoration: none;
+}
+
+.tabs a:hover,
+.tabs a:focus,
+.tabs a.current {
+  border-bottom-color: #192127;
+  color: #192127;
+  text-decoration: none;
+}
+
+/* --------------------------
 *  Drop-down
 * -------------------------- */
 

@@ -32,6 +32,13 @@
   color: $white;
 }
 
+.card__content {
+  color: $black;
+  margin: 0 0 0.5em 0;
+  padding: 15px;
+  font-weight: normal;
+}
+
 .card__intro span {
   font-size: 1.3em;
 }
@@ -85,6 +92,5 @@
 /* Desktop */
 @include desktop {
   .cards .card {
-    width: calc(25% - #{$pulse});
   }
 }

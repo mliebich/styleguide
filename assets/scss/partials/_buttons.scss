@@ -1,57 +1,87 @@
 /*================================
  * BUTTONS
  * ===============================*/
-
 .btn {
   font-size: 1.3rem;
   background: $white;
   color: $black;
-
   padding: $pulse;
   margin: 0;
-
   border: 1px solid $gray-4;
   border-radius: 3px;
-
   text-decoration: none;
   text-transform: uppercase;
-
   cursor: pointer;
   display: flex;
   align-items: center;
 
-  &:hover,
   &:active,
-  &:focus {
+  &:focus,
+  &:hover {
     text-decoration: none;
     background-color: $gray-4;
     color: $primary-color;
   }
-
 }
 
 .btn--cta {
   background-color: $primary-color;
   color: $white;
   border: 1px solid $primary-color;
-  &:hover,
+  justify-content: center;
+
   &:active,
-  &:focus {
+  &:focus,
+  &:hover {
     background-color: darken($primary-color, 20);
     border-color: darken($primary-color, 15);
     color: $white;
   }
 }
 
+.btn--wide {
+  flex: 1 0 auto;
+}
+
+.btn--row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 1.6rem;
+}
+
 .btn--warning {
   background-color: $secondary-color;
   color: $white;
   border: 1px solid $secondary-color;
-  &:hover,
+
   &:active,
-  &:focus {
-      background-color: darken($secondary-color, 15);
-      border-color: darken($secondary-color, 15);
-      color: $white;
+  &:focus,
+  &:hover {
+    background-color: darken($secondary-color, 15);
+    border-color: darken($secondary-color, 15);
+    color: $white;
   }
+}
+
+.btn--send {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1.6rem;
+}
+
+.btn--fileupload {
+  background-color: $white;
+  border: 1px solid $gray-4;
+  padding: $pulse;
+  font-size: inherit;
+  margin: 0;
+
+  &:focus {
+    border-color: #72787e;
+  }
+  box-shadow: 0 0 20px rgba(0,0,0,0.14);
 }

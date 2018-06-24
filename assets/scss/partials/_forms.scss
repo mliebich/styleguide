@@ -1,53 +1,110 @@
-/* ===================================
- * FORMS
- * ===================================*/
-
-.input {
-  font-size: 1.5rem;
-  color: $gray-1;
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+.form--inpage {
+  margin-bottom: 3.2rem;
 }
 
-.input__label {
+.input-group__label {
   display: inline-block;
+  margin: 0 0 0.5em;
   cursor: pointer;
-  margin: 0 0 .5em;
 }
 
-.input__field {
-  background-color: $white;
-  border: 1px solid $gray-4;
-  padding: $pulse;
+.input-group__field {
+  padding: 1.6rem;
+  margin: 0 0 1.6rem;
   font-size: inherit;
-  margin: 0;
-  &:focus {
-    border-color: #72787e;
-  }
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-group__field {
+  background-color: #fff;
+  border: 1px solid #e3e5e9;
   box-shadow: 0 0 20px rgba(0,0,0,0.14);
+  transition: all 0.15s cubic-bezier(.44,-0.44,.44,1.66);
 }
 
-.input__textarea{
-  resize: both;
-}
-
-.input__requirement{
-  color: $secondary-color
-}
-
-
-.input__row {
-  display: flex;
-  & .btn{
-    border-radius: 0;
-    border-left-width: 0;
-  }
-
-  & .input__field {
-    flex: 1 0 10em;
-  }
-}
-
-
-
-.input--cta .input__field {
+.input-group__field:focus {
   border-color: $primary-color;
+  box-shadow: 0 0 20px rgba(0,0,0,0.35);
+}
+
+.input-group textarea {
+  height: 100px;
+}
+@media screen and (min-width: 600px) {
+  .input-group--horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .input-group--horizontal .input-group__label,
+  .input-group--horizontal > .field_with_errors {
+    flex: 0 1 20%;
+    margin-top: 1.25rem;
+  }
+
+  .input-group--horizontal .input-group__field,
+  .input-group--horizontal > .field_with_errors ~ .field_with_errors {
+    flex: 1 0 auto;
+    width: auto;
+
+    .input-group__field {
+      width: 100%;
+    }
+  }
+}
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-row__field {
+  flex: 1 0 auto;
+  background-color: #fff;
+  border: 1px solid #e3e5e9;
+  box-shadow: none;
+  padding: 1.6rem;
+  font-size: inherit;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.input-row__field:focus {
+  border-color: #72797e;
+}
+
+.alert {
+  color: #e25d43;
+  margin-bottom: 1.6rem;
+}
+@media screen and (min-width: 600px) {
+  .alert--wide {
+    margin-left: 20%;
+  }
+}
+
+.bluelink {
+  flex: 0 1 20%;
+  color: #2c9cf2;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.send__confirm {
+  flex: 1 0 auto;
+  justify-content: center;
+}
+
+.custom-file-upload {
+  background-color: #fff;
+  border: 1px solid #e3e5e9;
+  box-shadow: 0 0 20px rgba(0,0,0,0.14);
+  transition: all 0.15s cubic-bezier(.44,-0.44,.44,1.66);
 }
