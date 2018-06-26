@@ -46,7 +46,8 @@
 
 .box {
   margin-bottom: 3rem;
-  margin-left: 1.5rem;
+  //margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .box__example {
@@ -60,4 +61,16 @@
   height: 5.5em;
   transition: transform 250ms;
   margin-bottom: 1rem;
+}
+
+.leftspace {
+  margin: 0 $pulse;
+}
+
+.blue {
+  flex: 0 1 20%;
+  color: #2c9cf2;
+  font-size: 1.5em;
+  text-decoration: none;
+  align: right;
 }

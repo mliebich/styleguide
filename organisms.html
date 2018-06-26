@@ -48,7 +48,13 @@
     <div class="content-wrapper">
       <h1>Organisms</h1>
       <ul>
-        <li><a href="index.html">01. Goal overview</a></li>
+        <li><a href="#Goal">01. Goal overview</a></li>
+        <li><a href="#Create goal">02.Create goal</a></li>
+        <li><a href="#Comments">03. Comments</a></li>
+        <li><a href="#Edit profile">04. Edit profile</a></li>
+        <li><a href="#Log in">05. Log in</a></li>
+        <li><a href="#Goals overview">06. Goals overview</a></li>
+        <li><a href="#User followers">07. User followers</a></li>
       </ul>
     </div>
   </header>
@@ -57,28 +63,300 @@
     <!-- 01 Goal overview -->
     <div class="content-wrapper">
       <h2>01. Goal overview</h2>
-      <ul class="bare-list cards">
-        <li class="card card__thumb">
+      <div class="comments-group input-group--horizontal">
+        <div class="card card__thumb">
           <img src="assets/images/northern-lights-small.jpg" alt="Northern lights above a house at night" srcset="assets/images/northern-lights-small.jpg 300w, assets/images/northern-lights-large.jpg 600w" />
-        </li>
-        <li class="card">
-          <h2 class="card__content">See the northern lights.</h2>
-          <div class="btn--row">
-            <button class="btn btn--cta" type="submit">
-            <svg class="icon icon--done" height="18" viewBox="0 0 24 24" width="18" role="presentation">
-              <use xlink:href="#done"></use>
-            </svg>
-            Completed
-          </button>
-            <button class="btn btn--like" type="submit" name="action" value="like">
-              <svg class="icon icon--like" height="18" viewBox="0 0 24 24" width="18" role="presentation">
-                <use xlink:href="#favorite"></use>
-              </svg>
-            Like
-            </button>
+        </div>
+        <div class="comments-group__description">
+          <div>
+            <img src="https://pbs.twimg.com/profile_images/907811115459125248/i8AzK6gR_400x400.jpg" alt="" class="image--cover" />
           </div>
-        </li>
-    </div>
+          <h2>See the northern lights</h2>
+          <div class="wrapped-list box">
+            <div tabindex="0" class="box">
+              <button class="btn btn--like" type="submit" name="action" value="like">
+                      <svg class="icon icon--like" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                        <use xlink:href="#favorite"></use>
+                      </svg>
+                        Like
+              </button>
+            </div>
+            <div tabindex="0" class="box">
+              <button class="btn btn--like" type="submit" name="action" value="like">
+                      <svg class="icon icon--like" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                        <use xlink:href="#favorite"></use>
+                      </svg>
+                        Like
+              </button>
+            </div>
+            <div tabindex="0" class="box">
+              <button class="btn btn--like" type="submit" name="action" value="like">
+                      <svg class="icon icon--like" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                        <use xlink:href="#favorite"></use>
+                      </svg>
+                        Like
+              </button>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam reprehenderit
+              quasi sapiente modi tempora at perspiciatis mollitia, dolores voluptate. Cumque, corrupti?</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 02 Create goal -->
+      <div class="content-wrapper">
+        <h2>02. Create goal</h2>
+        <form class="form--inpage" action="create-goal.html" method="post">
+          <div class="input-group input-group--horizontal">
+            <label class="input-group__label" for="goal-title">Title</label>
+            <input id="goal-title" class="input-group__field" type="text" name="goal-title" placeholder="E.g. Go skiing">
+          </div>
+          <div class="input-group input-group--horizontal">
+            <label class="input-group__label" for="goal-image">Add an image</label>
+            <input id="goal-image" class="input-group__field custom-file-upload" type="file" name="goal-image">
+          </div>
+          <div class="input-group input-group--horizontal">
+            <label class="input-group__label" for="goal-tags">Add tags</label>
+            <input id="goal-tags" class="input-group__field" type="text" name="goal-tags" placeholder="Separate multiple tags with commas">
+          </div>
+          <div class="input-group input-group--horizontal">
+            <label class="input-group__label" for="goal-description">Description</label>
+            <textarea id="goal-description" class="input-group__field"></textarea>
+          </div>
+          <div class="btn--send">
+            <a class="blue" href="#cancel">Cancel</a>
+            <button class="btn btn--cta btn--wide" type="submit">Create Goal</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 03 Comments -->
+      <div class="content-wrapper">
+        <h2>03. Comments</h2>
+        <h1>Discussion<sup>3 Comments</sup></h1>
+        <div class="comments-group input-group--horizontal">
+          <img src="https://pbs.twimg.com/profile_images/907811115459125248/i8AzK6gR_400x400.jpg" alt="" class="image--cover" />
+          <form class="form--inpage comments-group__field" action="create-post.html" method="post">
+            <div class="input-group__label">
+              Add a comment
+            </div>
+            <div class="input-group input-group--horizontal">
+              <textarea id="goal-description" class="input-group__field"></textarea>
+            </div>
+            <div class="btn--send">
+              <button class="btn btn--cta" type="submit">Post</button>
+            </div>
+          </form>
+        </div>
+        <div class="comments-group comments-group--horizontal">
+          <img src="https://pbs.twimg.com/profile_images/907811115459125248/i8AzK6gR_400x400.jpg" alt="" class="image--cover" />
+          <p class="comments-group__field">
+            <div>
+              <div>
+                <p>Brad Frost Jul 26, 2018 @ 1:35 AM</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam reprehenderit
+                quasi sapiente modi tempora at perspiciatis mollitia, dolores voluptate. Cumque, corrupti?</p>
+            </div>
+          </p>
+        </div>
+        <div class="comments-group comments-group--horizontal">
+          <img src="https://pbs.twimg.com/profile_images/907811115459125248/i8AzK6gR_400x400.jpg" alt="" class="image--cover" />
+          <p class="comments-group__field">
+            <div>
+              <div>
+                <p>Brad Frost Jul 26, 2018 @ 1:35 AM</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum. Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam reprehenderit
+                quasi sapiente modi tempora at perspiciatis mollitia, dolores voluptate. Cumque, corrupti?</p>
+            </div>
+          </p>
+        </div>
+      </div>
+
+      <!-- 04 Edit profile -->
+      <div class="content-wrapper">
+        <h2>04. Edit profile</h2>
+        <form class="form--inpage" action="profile.html" method="post">
+          <div class="input-group input-group--horizontal">
+            <label class="input-group__label" for="full-name">Full name</label>
+            <input id="full-name" class="input-group__field" type="text" name="full-name" placeholder="e.g. Jeff Johnson">
+          </div>
+          <div class="input-group input-group--horizontal">
+            <label class="input-group__label" for="profile-image">Profile picture</label>
+            <input id="profile-image" class="input-group__field" type="file" name="profile-image">
+          </div>
+          <div class="input-group input-group--horizontal">
+            <label class="input-group__label" for="profile-description">Description</label>
+            <textarea id="profile-description" class="input-group__field"></textarea>
+          </div>
+          <div class="btn--send">
+            <a class="blue" href="#cancel">Cancel</a>
+            <button class="btn btn--cta btn--wide" type="submit">Edit profile</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 05 Login -->
+      <div class="content-wrapper">
+        <h2>05. Log in</h2>
+        <form class="form--inpage" action="profile.html" method="post">
+          <div class="input-group input-group--horizontal">
+            <label class="input-group__label" for="email">Email</label>
+            <input id="email" class="input-group__field" type="text" name="email" placeholder="e.g. Jeff Johnson">
+          </div>
+          <div class="input-group input-group--horizontal">
+            <label class="input-group__label" for="password">Password</label>
+            <input id="password" class="input-group__field" type="text" name="password" placeholder="">
+          </div>
+          <div class="input-group--spacebetween">
+            <div>
+              <input type="checkbox">
+              <span class="checkmark"></span>
+              <label for="rememberme">Remember me</label>
+            </div>
+            <div>
+              <a class="blue">Forgot password?</a>
+            </div>
+          </div>
+          <div class="btn--send">
+            <a class="blue" href="#cancel"></a>
+            <button class="btn btn--cta btn--wide" type="submit">LOG IN</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- 06 Goals overview -->
+      <div class="content-wrapper">
+        <h2>06. Goals overview</h2>
+        <ul class="bare-list cards">
+          <li class="card">
+            <a class="card__thumb" href="ideas/see-the-northern-lights.html">
+                  <img src="assets/images/northern-lights-small.jpg" alt="Northern lights above a house at night" srcset="assets/images/northern-lights-small.jpg 300w, assets/images/northern-lights-large.jpg 600w">
+                  <div class="card__intro">
+                    <h3 class="card__title">See the northern lights.</h3>
+                    <span>1254 people are doing this</span>
+                  </div>
+                </a>
+            <form class="card__footer" action="idea" method="post">
+              <button class="btn btn--like" type="submit" name="action" value="like">
+                    <svg class="icon icon--liked" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                      Liked
+                  </button>
+              <button class="btn btn--add" type="submit" name="action" value="addGoal">
+                    <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                      <use xlink:href="#add"></use>
+                    </svg>
+                    Add goal
+                  </button>
+            </form>
+          </li>
+          <li class="card">
+            <a class="card__thumb" href="ideas/see-the-northern-lights.html">
+                  <img src="assets/images/northern-lights-small.jpg" alt="Northern lights above a house at night" srcset="assets/images/northern-lights-small.jpg 300w, assets/images/northern-lights-large.jpg 600w">
+                  <div class="card__intro">
+                    <h3 class="card__title">See the northern lights.</h3>
+                    <span>1254 people are doing this</span>
+                  </div>
+                </a>
+            <form class="card__footer" action="idea" method="post">
+              <button class="btn btn--like" type="submit" name="action" value="like">
+                    <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                      Like
+                  </button>
+              <button class="btn btn--add" type="submit" name="action" value="addGoal">
+                    <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                      <use xlink:href="#add"></use>
+                    </svg>
+                    Add goal
+                  </button>
+            </form>
+          </li>
+          <li class="card">
+            <a class="card__thumb" href="ideas/swim-with-dolphins.html">
+                  <img src="assets/images/dolphins-small.jpg" alt="3 dolphins swimming under water" srcset="assets/images/dolphins-small.jpg 300w, assets/images/dolphins-large.jpg 600w">
+                  <div class="card__intro">
+                    <h3 class="card__title">Swim with dolphins.</h3>
+                    <span>1254 people are doing this</span>
+                  </div>
+                </a>
+            <form class="card__footer" action="idea" method="post">
+              <button class="btn btn--like" type="submit" name="action" value="like">
+                    <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                      Like
+                  </button>
+              <button class="btn btn--add" type="submit" name="action" value="addGoal">
+                    <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                      <use xlink:href="#add"></use>
+                    </svg>
+                    Add goal
+                  </button>
+            </form>
+          </li>
+          <li class="card">
+            <a class="card__thumb" href="ideas/dance-like-nobody.html">
+                  <img src="assets/images/dancing-small.jpg" alt="3 dolphins swimming under water" srcset="assets/images/dancing-small.jpg 300w, assets/images/dancing-small.jpg 600w">
+                  <div class="card__intro">
+                    <h3 class="card__title">Swim with dolphins.</h3>
+                    <span>1254 people are doing this</span>
+                  </div>
+                </a>
+            <form class="card__footer" action="idea" method="post">
+              <button class="btn btn--like" type="submit" name="action" value="like">
+                    <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                      <use xlink:href="#favorite"></use>
+                    </svg>
+                      Like
+                  </button>
+              <button class="btn btn--add" type="submit" name="action" value="addGoal">
+                    <svg class="icon" height="18" viewBox="0 0 24 24" width="18" role="presentation">
+                      <use xlink:href="#add"></use>
+                    </svg>
+                    Add goal
+                  </button>
+            </form>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 07 Followers -->
+      <div class="content-wrapper">
+        <h2>07. Followers</h2>
+        <div class="followers-group followers-group--horizontal">
+          <img src="https://pbs.twimg.com/profile_images/907811115459125248/i8AzK6gR_400x400.jpg" alt="" class="image--cover" />
+          <div class="leftspace">
+            <div class="blue">Brad Frost</div>
+            <p>3 Goals</p>
+          </div>
+          <p class="followers-group__field">
+            <div>
+              <div>
+                <button class="btn">Following</button>
+              </div>
+            </div>
+          </p>
+        </div>
+        <div class="followers-group followers-group--horizontal">
+          <img src="https://pbs.twimg.com/profile_images/907811115459125248/i8AzK6gR_400x400.jpg" alt="" class="image--cover" />
+          <div class="leftspace">
+            <div class="blue">Brad Frost</div>
+            <p>3 Goals</p>
+          </div>
+          <p class="followers-group__field">
+            <div>
+              <div>
+                <button class="btn">Following</button>
+              </div>
+            </div>
+          </p>
+        </div>
+      </div>
   </main>
 
   <!-- Start

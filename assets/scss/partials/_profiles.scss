@@ -1,13 +1,14 @@
 /*================================
  * PROFILES
  * ===============================*/
+.image--cover {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  //margin-top: 1.5rem;
+}
 
- .image--cover {
-   width: 120px;
-   height: 120px;
-   border-radius: 50%;
-   margin: 20px;
-
-   object-fit: cover;
-   object-position: center right;
- }
+.image--unscaled {
+  border-radius: 50%;
+  margin-top: 1.5rem;
+}

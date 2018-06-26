@@ -43,13 +43,8 @@
   flex: 1 0 auto;
 }
 
-.btn--row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-left: 1.6rem;
+.btn--space {
+  margin: 0 $pulse;
 }
 
 .btn--warning {
@@ -70,7 +65,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 1.6rem;
+  //margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
 }
 
 .btn--fileupload {

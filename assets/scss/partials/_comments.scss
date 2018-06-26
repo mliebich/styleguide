@@ -1,0 +1,77 @@
+/* ==========================================================================
+   COMMENTS
+   ========================================================================== */
+.comments--inpage {
+  margin-bottom: 3.2rem;
+}
+
+.comments-group__label {
+  display: inline-block;
+  margin: 0 0 0.5em;
+  cursor: pointer;
+}
+
+.comments-group__field {
+  margin-left:5%;
+  font-size: inherit;
+  display: block;
+  //width: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.comments-group__description {
+  margin-left:5%;
+  font-size: inherit;
+  display: block;
+  //width: 30px;
+  width: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 600px) {
+  .comments-group--horizontal {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .comments-group--horizontal .comments-group__label,
+  .comments-group--horizontal > .field_with_errors {
+    flex: 0 1 20%;
+    margin-top: 1.25rem;
+  }
+
+  .comments-group--horizontal .comments-group__field,
+  .comments-group--horizontal > .field_with_errors ~ .field_with_errors {
+    flex: 1 0 auto;
+    width: auto;
+
+    .comments-group__field {
+      width: 100%;
+    }
+  }
+}
+
+.comments-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.comments-row__field {
+  flex: 1 0 auto;
+  background-color: #fff;
+  border: 1px solid #e3e5e9;
+  box-shadow: none;
+  padding: 1.6rem;
+  font-size: inherit;
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.comments-row__field:focus {
+  border-color: #72797e;
+}
